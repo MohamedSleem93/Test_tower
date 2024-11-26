@@ -1,0 +1,10 @@
+---
+- name: Ansible Debug Example
+  hosts: all
+  gather_facts: false
+  vars:
+    my_variable: "AWX test Github"
+  tasks:
+    - name: Display a simple message
+      debug:
+        msg: "Hello AWX"
