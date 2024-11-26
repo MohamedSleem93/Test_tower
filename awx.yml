@@ -8,3 +8,9 @@
     - name: Display a simple message
       debug:
         msg: "Hello AWX"
+ 
+- name: Test connectivity to all hosts
+  hosts: all
+  tasks:
+    - name: Ping all hosts
+      ansible.builtin.ping:
